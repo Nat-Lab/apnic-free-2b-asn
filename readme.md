@@ -1,7 +1,7 @@
 apnic-free-2b-asn
 ---
 
-`apnic-free-2b-asn` is a very simple python script that finds available 2byte ASN in the APNIC region. It first fetches all ASN delegated to APNIC [here](https://raw.githubusercontent.com/rfc1036/whois/next/as_del_list"), then gets all assigned ASNs [here](https://ftp.apnic.net/apnic/whois/apnic.db.aut-num.gz), and finishing up by excluding all NIR `as-block`s with the data available [here](https://ftp.apnic.net/apnic/whois/apnic.db.as-block.gz).
+`apnic-free-2b-asn` is a very simple python script that lists all available (unassigned) 2-byte ASNs in the APNIC region. It first fetches all ASNs delegated to APNIC [here](https://raw.githubusercontent.com/rfc1036/whois/next/as_del_list"), then gets all assigned ASNs [here](https://ftp.apnic.net/apnic/whois/apnic.db.aut-num.gz), and finishing up by excluding all NIR `as-block`s with the data available [here](https://ftp.apnic.net/apnic/whois/apnic.db.as-block.gz).
 
 ### Why?
 
