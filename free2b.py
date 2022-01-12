@@ -3,6 +3,9 @@
 from io import StringIO
 import urllib.request
 import csv, gzip, re
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 def get_rir_del():
     return StringIO(urllib.request.urlopen("https://raw.githubusercontent.com/rfc1036/whois/next/as_del_list").read().decode("utf-8", errors="ignore"))
